@@ -7,7 +7,7 @@
   },
   "scripts": {
     "deployment": "hexo clean && hexo d -g",
-    "git": "git add . && git commit -m update && git push origin hexo && git push backup hexo",
+    "git": "git add . && git commit -m update && git push origin post",
     "dg": "npm run deployment && npm run git"
   },
   "dependencies": {
