@@ -8,7 +8,8 @@
   "scripts": {
     "deployment": "hexo clean && hexo d -g",
     "git": "git add . && git commit -m update && git push origin post",
-    "dg": "npm run deployment && npm run git"
+    "dg": "npm run deployment && npm run git",
+    "s": "hexo s -p 3334"
   },
   "dependencies": {
     "hexo": "^3.8.0",
