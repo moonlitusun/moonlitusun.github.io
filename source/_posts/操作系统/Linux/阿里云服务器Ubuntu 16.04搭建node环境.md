@@ -1,0 +1,219 @@
+---
+title: 阿里云服务器Ubuntu 16.04搭建node环境
+password: moonlit
+date: 2018-09-20 10:48:13
+categories: 
+- 操作系统
+- linux
+---
+
+{% img /image/操作系统/Linux/banner/ubuntu.jpg 300 300 %}
+
+<!--more-->
+
+# apt-get
+
+```bash
+apt-cache search package 搜索软件包
+
+apt-cache show package  获取包的相关信息，如说明、大小、版本等
+
+sudo apt-get install package 安装包
+
+sudo apt-get install package --reinstall   重新安装包
+
+sudo apt-get -f install   修复安装
+
+sudo apt-get remove package 删除包
+
+sudo apt-get remove package --purge 删除包，包括配置文件等
+
+sudo apt-get update  更新源
+
+sudo apt-get upgrade 更新已安装的包
+
+sudo apt-get dist-upgrade 升级系统
+
+apt-cache depends package 了解使用该包依赖那些包
+
+apt-cache rdepends package 查看该包被哪些包依赖
+
+sudo apt-get build-dep package 安装相关的编译环境
+
+apt-get source package  下载该包的源代码
+
+sudo apt-get clean && sudo apt-get autoclean 清理无用的包
+
+sudo apt-get check 检查是否有损坏的依赖
+```
+
+----
+
+# node
+
+## 安装默认版本
+
+```shell
+# node v4.2.6
+sudo apt-get install nodejs
+
+sudo apt install nodejs-legacy
+
+# npm v3.5.2
+sudo apt install npm
+```
+
+## npm镜像
+
+```node
+sudo npm config set registry https://registry.npm.taobao.org
+
+sudo npm config list
+```
+
+## 安装n
+
+[n](https://www.npmjs.com/package/n)
+
+```node
+npm install -g n
+```
+
+```node
+n stable
+```
+
+## 安装pm2
+
+```node
+npm install -g pm2
+```
+
+----
+
+# git
+
+```shell
+sudo apt-get install git
+
+sudo git --version
+```
+
+```node
+git config --global user.name xx
+
+git config --global user.email xx
+
+git config --list
+```
+
+----
+
+# nginx
+
+## 安装依赖
+
+```shell
+sudo apt-get install gcc zlib1g-dev libpcre3 libpcre3-dev libssl-dev
+```
+
+## 下载nginx
+
+```shell
+wget https://nginx.org/download/nginx-1.13.4.tar.gz
+```
+
+## 解压并进入目录
+
+```shell
+tar -xvf nginx-1.13.4.tar.gz
+
+cd nginx-1.13.4/
+```
+
+## 编译和安装
+
+```shell
+./configure
+
+sudo make
+
+sudo make install
+```
+
+## 查看nginx版本
+
+```shell
+# 进入nginx安装目录
+cd /usr/local/nginx/
+
+# 查看版本
+sbin/nginx -v
+```
+
+## 默认配置启动
+
+```shell
+sudo /usr/local/nginx/sbin/nginx
+
+# 查看是否启动成功  端口默认是80端口
+# 如果返回html 里面有  Welcome to nginx! 则成功
+curl 127.0.0.1
+```
+
+## 配置实例80端口入网方向安全组
+
+端口范围：80/80
+授权对象：0.0.0.0/0
+优先级：100
+
+----
+
+# mysql
+
+## 安装
+
+```shell
+sudo apt-get install mysql-server
+
+sudo apt install mysql-client
+
+sudo apt install libmysqlclient-dev
+```
+
+检测是否安装成功
+
+```shell
+sudo netstat -tap | grep mysql
+```
+
+## 配置实例3306端口入网方向安全组
+
+端口范围：3306/3306
+授权对象：0.0.0.0/0
+优先级：100
+
+## 注释mysql host配置
+
+```shell
+# 注释掉 bind-address = 127.0.0.1
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+## 打开远程连接权限
+
+```shell
+# 连接数据库，进入mysql库
+update user set host='%' where user='root'
+
+# 刷新
+flush privileges
+```
+
+## 原文链接
+
+本文首发于[moolit's blog](http://moonlit.vip/)
+
+## 发布平台
+
+[✨ 简书](https://www.jianshu.com/p/eae316353874)
