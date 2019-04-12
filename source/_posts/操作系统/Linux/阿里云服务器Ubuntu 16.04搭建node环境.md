@@ -212,7 +212,7 @@ flush privileges
 
 ## 原文链接
 
-本文首发于[moolit's blog](http://moonlit.vip/)
+本文首发于[moolit's blog](https://moonlit.vip/)
 
 ## 发布平台
 
