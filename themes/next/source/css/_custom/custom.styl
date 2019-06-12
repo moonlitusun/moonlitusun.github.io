@@ -1,0 +1,219 @@
+@import './animation' 
+// pulse wobble
+
+
+/* ========================================================================
+ * 全局
+ * 
+ * ======================================================================== */
+::selection {
+  color: #fff;
+  background-color rgba(0, 0, 0, .2);
+}
+
+body {
+  color: #2f2f2f;
+  background: url(../image-bg/pure/5.jpeg);
+}
+
+/* ========================================================================
+ * 标题
+ * 
+ * ======================================================================== */
+h1 {
+  color: #3d9194;
+  margin: 15px 0;
+}
+
+h2 {
+  color: #896cbd;
+}
+
+h3 {
+  color: #c9a4c9;
+}
+
+h4 {
+  color: #80b580;
+}
+
+/* ========================================================================
+ * 文章正文 
+ *
+ * ======================================================================== */
+/*
+ * 提醒
+ *
+ */
+.note {
+  margin: 25px 0;
+  background rgba(163, 214, 168, 0.64)
+}
+
+/*
+ * 文章内链接文本样式
+ *
+ * post.styl
+ */
+.post-body p a {
+  color: #3194d0;
+  border-bottom: 1px solid #d1e9ff;
+  &:hover {
+    color: #bd9f83;
+    border-bottom: 1px solid #bd9f83;
+  }
+}
+
+/*
+ * 代码块
+ *
+ * `xx`
+ */
+code {
+  margin: 0 .5em;
+  padding: .5em .5em;
+  font-size: 13px;
+  color: #578272;
+  background-color: #fff5f5;
+}
+
+.code  pre {
+  font-size: 13px;
+}
+
+/*
+ * 引用
+ *
+ * > xx
+ */
+blockquote {
+  color: #666;
+  padding: 1px 23px;
+  margin: 22px 0;
+  border-left: 4px solid #cbcbcb;
+  background-color: #f8f8f8;
+
+  > p {
+    margin: 10px 0;
+  }
+}
+
+/* ========================================================================
+ * 侧边栏区域
+ * 
+ * ======================================================================== */
+
+.header-inner {
+  background: rgba(255, 255, 255, .5)
+}
+
+// 网站标题 site-meta.styl
+.brand {
+  border-radius: 10pc;
+  animation: pulse 3s infinite;
+  -webkit-animation: pulse 3s infinite;
+}
+
+// 头像 sidebar.author.styl
+.site-author-image {
+  display: block;
+  margin: 0 auto;
+  padding: $site-author-image-padding;
+  max-width: $site-author-image-width;
+  height: $site-author-image-height;
+  border: $site-author-image-border-width solid $site-author-image-border-color;
+  border-radius: 80px;
+  -webkit-border-radius: 80px;
+  -moz-border-radius: 80px;
+  box-shadow: inset 0 -1px 0 #333sf;
+
+  &:hover {
+    animation: wobble 1s;
+    -webkit-animation: wobble 1s;
+    -moz-animation: wobble 1s;
+  }
+}
+
+/*================*/
+
+// 导航
+.sidebar-inner {
+  background: rgba(255, 255, 255, .5)
+}
+
+/* ========================================================================
+ * HOME页面
+ * 
+ * ======================================================================== */
+// 内容
+.post-block {
+  background: rgba(255, 255, 255, .5)
+}
+
+// read more按钮 post-button.styl
+.post-button .btn {
+  border-radius: 10pc;
+  border: 1px solid #ff7e5f;
+  background: #ff7e5f;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* ========================================================================
+ * categories 大分类
+ * 
+ * ======================================================================== */
+// item categories.styl
+.category-all-page .category-list-item {
+  list-style: none !important;
+
+  a.category-list-link {
+    border-bottom: 0;
+  }
+}
+
+/* ========================================================================
+ * categories 小分类
+ * 
+ * ======================================================================== */
+// 内容容器 post-collapse.styl
+.posts-collapse {
+  .post { 
+    margin: 30px 0;
+    padding: 10px;
+    background: url(../image-bg/pure/1.jpeg) 100% center;
+    box-shadow: 3px 4px 5px #dedede;
+    background-size: conver;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow .8s;
+
+    &:hover {
+      box-shadow: 15px 15px 15px #ccc;
+    }
+  }
+
+  .post-header {
+    border-bottom: none;
+  }
+}
+
+// 修改文章标题样式 post-title.styl
+.posts-expand .post-title-link {
+  &::before {
+    background-color: #ccc;
+    visibility: hidden;
+    transform: scaleX(0);
+    the-transition();
+  }
+}
+
+/* ========================================================================
+ * 右导航栏
+ * 
+ * Muse Mist 主题
+ * ======================================================================== */
+// 修改文章侧边栏样式 sidebar.styl
+.sidebar {
+  background: rgba(0, 0, 0, .8);
+}
