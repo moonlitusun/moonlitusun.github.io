@@ -1,11 +1,23 @@
 .posts-expand .post-title {
-  font-size: 26px;
+  word-wrap();
   text-align: center;
-  word-break: break-word;
-  font-weight: $posts-expand-title-font-weight
+  font-weight: $posts-expand-title-font-weight;
 
-  +mobile() {
-    font-size: 22px;
+  if hexo-config('post_edit.enable') {
+    .post-edit-link {
+      color: #bbb;
+      display: inline-block;
+      float: right;
+      border-bottom: none;
+      the-transition-ease-in();
+      margin-left: -1.2em;
+      +mobile-small() {
+        margin-left: initial;
+      }
+      &:hover {
+        color: black;
+      }
+    }
   }
 }
 
@@ -25,6 +37,9 @@
     bottom: 0;
     left: 0;
     background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    the-transition();
   }
 
   &:hover::before {
@@ -32,5 +47,8 @@
     transform: scaleX(1);
   }
 
-  .fa { font-size: 16px; }
+  .fa {
+    font-size: 20px;
+    margin-left: 5px;
+  }
 }

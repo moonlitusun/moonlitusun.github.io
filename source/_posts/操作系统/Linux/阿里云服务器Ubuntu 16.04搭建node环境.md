@@ -1,13 +1,13 @@
 ---
-title: 阿里云服务器Ubuntu 16.04搭建node环境
+title: 阿里云服务器ubuntu 16.04搭建node环境
 password: moonlit
 date: 2018-09-20 10:48:13
 categories: 
 - 操作系统
-- linux
+- Linux
 ---
 
-{% img /image/操作系统/Linux/banner/ubuntu.jpg 300 300 %}
+{% img /images/操作系统/linux/ubuntu16-04/banner.jpg 300 300 %}
 
 <!--more-->
 
