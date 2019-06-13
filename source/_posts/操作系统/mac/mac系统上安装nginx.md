@@ -27,7 +27,7 @@ categories:
 
 ---
 
-## 安装nginx
+## 安装Nginx
 
 执行以下命令
 
@@ -35,11 +35,11 @@ categories:
 brew install nginx
 ```
 
-此时，我们已经安装完毕。。。。。还没有开始就结束了的感觉
+此时，我们已经安装完毕。。。。。
 
 下面看下安装完毕怎么使用
 
-## homebrew nginx命令
+## Homebrew nginx命令
 
 - 启动nginx
 
@@ -59,7 +59,7 @@ brew install nginx
   brew services stop nginx
   ```
 
-## nginx文件目录
+## Nginx文件目录
 
 下面是`nginx`的一些文件默认安装目录
 
@@ -87,10 +87,12 @@ brew install nginx
   /private/etc/hosts
   ```
 
-## 原文链接
+---
 
-本文首发于个人博客[moolit](https://moonlit.vip/)
+> 原文链接
 
-## 发布平台
+本文首发于个人博客[☀️ moolit](https://moonlit.vip/)
+
+> 发布平台
 
 [✨ 简书](https://www.jianshu.com/p/07873287c1c1)

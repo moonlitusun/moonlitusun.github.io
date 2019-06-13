@@ -47,7 +47,7 @@ System Preferences > Keyboard > Shortcuts > General
 
 设置快捷键为`command + option + T`
 
-## 一些appleScript
+# 一些appleScript
 
 增大音量（将现有音量增大2%）
 
@@ -73,8 +73,10 @@ set volume with output muted
 tell application "iTunes" to playpause
 ```
 
-## 原文链接
+---
 
-本文首发于个人博客[moolit](https://moonlit.vip/)
+> 原文链接
 
-## 其他平台
+本文首发于个人博客[☀️ moolit](https://moonlit.vip/)
+
+> 发布平台
