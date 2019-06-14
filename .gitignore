@@ -7,3 +7,5 @@ public/
 .deploy*/
 .vscode
 public/
+package-lock.json
+yarn.lock
