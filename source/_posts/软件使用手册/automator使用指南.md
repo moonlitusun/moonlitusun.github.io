@@ -1,13 +1,12 @@
 ---
-title: Automator软件的使用
+title: Automator使用指南
 password: moonlit
 date: 2018-12-12 13:43:59
 categories: 
-- 操作系统
-- Mac
+- 软件使用手册
 ---
 
-{% img /images/操作系统/mac/automator/banner.png 300 300 %}
+{% img /images/软件使用手册/automator/banner.png 300 300 %}
 
 <!--more-->
 
