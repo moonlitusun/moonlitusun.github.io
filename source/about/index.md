@@ -1,23 +1,21 @@
 ---
-title: 关于我
+title: About Me
 date: 2017-08-05 09:01:27
 type: about
 ---
 
-I’m Roc，来自湖北。现长期生活在广东。
+# Love
 
-现在的工作是Web前端。这个博客主要写一些我自己的一些想法为主。
+- 💻 Love SKT T1(Faker), Since 2013.
+- 🎤 Love BigBang(GD), Since 2013.
+- 🎤 Love Jay Chou, Since 2013.
 
-你也可以在下面的平台上了解我。
+- ⚽️ Love Messi, Since 2018.
+- 🏀 Love James Harden, Since 2018.
+
+永远热泪盈眶！
+
+# 社交媒体
 
 - [Github](https://github.com/moonlitusun)
-
-一些公开代码的存放地
-
 - [Twitter](https://twitter.com/rocsun96)
-
-偶尔会发一些动态
-
-- [Instagram](https://www.instagram.com/moonlitusun/?hl=en)
-
-偶尔会分享一些照片
