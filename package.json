@@ -9,7 +9,8 @@
     "d": "hexo clean && hexo g && gulp && hexo d",
     "git": "git add . && git commit -m update && git push origin hexo",
     "s": "hexo s -p 3334",
-    "dg": "npm run d && npm run git"
+    "dg": "npm run d && npm run git",
+    "new": "hexo new"
   },
   "dependencies": {
     "hexo": "^5.4.0",
