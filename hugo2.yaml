@@ -3,16 +3,13 @@ title: Moonlit
 paginate: 5
 theme: paper
 
-enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
-
-googleAnalytics: UA-123-45
-
-minify:
-  disableXML: true
-  minifyOutput: true
+copyright: "Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved."
+languageCode: "en"
+DefaultContentLanguage: "en"
+enableInlineShortcodes: true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors: ["error-remote-getjson"]
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -107,18 +104,18 @@ params:
     shouldSort: true
     location: 0
     distance: 1000
-    threshold: 0.4
+    threshold: 0.4©
     minMatchCharLength: 0
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
     - identifier: about
-      name: about
+      name: About
       url: /about/
       weight: 10
-    - identifier: categories
-      name: Categories
-      url: /categories/
+    - identifier: archives
+      name: Archives
+      url: /archives/
       weight: 10
     - identifier: tags
       name: Tags
