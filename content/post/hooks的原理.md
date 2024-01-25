@@ -1,11 +1,16 @@
 +++
-author = "lee.so"
+author = "Roc"
 title = "Hooks的原理"
 date = "2020-08-12 21:59:12"
 description = "Lorem Ipsum Dolor Si Amet"
 tags = [
     "React",
 ]
+categories = [
+    "themes",
+    "syntax",
+]
+series = ["Themes Guide"]
 +++
 
 ## useState

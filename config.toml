@@ -1,7 +1,7 @@
 baseURL = "https://moonlitusun.github.io/"
 # title = "Hugo Themes"
-author = "Roc Sun"
-copyright = "Copyright © 2008–2019, Steve Francia and the lee.so; all rights reserved."
+author = "Roc"
+copyright = "Copyright © 2017–2024, Steve Francia and the lee.so; all rights reserved."
 paginate = 3
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -13,17 +13,17 @@ ignoreErrors = ["error-remote-getjson"]
 # ------------------------------
 theme = "paper"
 title = "Moonlit"
-
 staticDir = ['static']
 
 [params]
+  tags = true
   color = 'linen'
 
   twitter = 'rocsun96'
   github = 'monlitusun'
 
   avatar = 'https://moonlit.vip/images/avatar.jpg'
-  name = 'Roc Sun'
+  name = 'Roc ☀️'
   bio = '窮且益堅，不墜青雲之志'
 # ------------------------------
 
@@ -33,7 +33,7 @@ staticDir = ['static']
     [markup.goldmark.renderer]
       unsafe = true
   [markup.highlight]
-    lineNos = true
+    lineNos = false
 
 [menu]
 
@@ -47,9 +47,6 @@ staticDir = ['static']
     name = "Tags"
     url = "/tags/"
     weight = 10
-  [[menu.main]]
-    name = "Archive"
-    url = "/archive/"
 
 [taxonomies]
 category = "categories"
