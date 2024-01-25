@@ -25,6 +25,18 @@ staticDir = ['static']
   avatar = 'https://moonlit.vip/images/avatar.jpg'
   name = 'Roc ☀️'
   bio = '窮且益堅，不墜青雲之志'
+
+  # graphCommentId = "YOUR_GRAPH_COMMENT_ID"  # use graph comment (disqus alternative)
+
+  # giscus
+[params.giscus]
+  repo = 'moonlitusun/moonlitusun.github.io'                 # see https://giscus.app for more details
+  repoId = 'MDEwOlJlcG9zaXRvcnkxODA3MDgxMzk='
+  category = 'Announcements'
+  categoryId = 'DIC_kwDOCsVjK84CcsCi'
+  mapping = 'pathname'
+  theme = 'preferred_color_scheme'
+  lang = 'en'
 # ------------------------------
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
