@@ -14,13 +14,15 @@ ignoreErrors = ["error-remote-getjson"]
 theme = "paper"
 title = "Moonlit"
 
+staticDir = ['static']
+
 [params]
   color = 'linen'
 
   twitter = 'rocsun96'
-  github = 'mmonlitusun'
+  github = 'monlitusun'
 
-  avatar = 'nanxiaobei@gmail.com'
+  avatar = 'https://moonlit.vip/images/avatar.jpg'
   name = 'Roc Sun'
   bio = '窮且益堅，不墜青雲之志'
 # ------------------------------
