@@ -42,6 +42,14 @@ staticDir = ['static']
     name = "About"
     url = "/about/"
     weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 10
+  [[menu.main]]
+    name = "Archive"
+    url = "/archive/"
 
 [taxonomies]
 category = "categories"

@@ -1,5 +1,7 @@
 ---
-date: 2019-05-28
-type: section
-layout: 'archives'
+title: "Archive"
+type: archive
+url: "/archive/"
 ---
+
+All posts.
