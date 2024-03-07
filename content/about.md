@@ -6,16 +6,9 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "Roc"
 +++
 
-## Love
+热爱前端，热爱生活！
 
-- 💻 Love SKT T1(Faker), Since 2013.
-- 🎤 Love BigBang(GD), Since 2013.
-- 🎤 Love Jay Chou, Since 2013.
-
-- ⚽️ Love Messi, Since 2018.
-- 🏀 Love James Harden, Since 2018.
-
-永远热泪盈眶！
+**纵使千难万难，我从未想过认输。**
 
 ## 社交媒体
 
