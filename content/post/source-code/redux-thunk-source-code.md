@@ -1,9 +1,9 @@
 +++
 author = "Roc"
-title = "Redux Thunk源码解析"
+title = "Redux Thunk Source Code"
 date = "2021-06-01 22:10:48"
 tags = [
-    "React",
+    "Source-Code",
 ]
 +++
 
