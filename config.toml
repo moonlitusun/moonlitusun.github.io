@@ -14,7 +14,7 @@ ignoreErrors = ["error-remote-getjson"]
 theme = "gokarna"
 title = "Moonlit"
 staticDir = ['static']
-pygmentsStyle = "monokai"
+pygmentsStyle = "onedark"
 
 [params]
   tags = true
@@ -25,6 +25,7 @@ pygmentsStyle = "monokai"
 
   footer = "Roc"
   description = "窮且益堅，不墜青雲之志"
+  AccentColor = "#8a2be2"
 
   avatarURL = 'https://moonlit.vip/images/avatar.jpg'
   ShowBackToTopButton = true
