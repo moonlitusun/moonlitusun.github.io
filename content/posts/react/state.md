@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "State"
-date = "2019-08-12 10:20:33"
-tags = [
+---
+author: "Roc"
+title: "State"
+date: "2019-08-12 10:20:33"
+tags: [
     "React",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 介绍state本地状态管理 跟 props
 

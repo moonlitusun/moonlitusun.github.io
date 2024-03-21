@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "Code Reuse In Shell"
-date = "2024-01-30 13:58:29"
-tags = [
+---
+author: "Roc"
+title: "Code Reuse In Shell"
+date: "2024-01-30 13:58:29"
+tags: [
     "Shell",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 In shell scripting, unlike some programming languages, there is no built-in module system that allows the use of `import` syntax as seen in JavaScript or Python. However, you can achieve code reuse through techniques like sourcing external scripts using `source` or `.`(dot) commands。
 

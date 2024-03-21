@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "HOC"
-date = "2019-06-12 10:54:29"
-tags = [
+---
+author: "Roc"
+title: "HOC"
+date: "2019-06-12 10:54:29"
+tags: [
     "React",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 高阶组件是一个复用组件逻辑的高级用法，他不是react API的部分，而是react自然生态衍生出来的一种模式。
 

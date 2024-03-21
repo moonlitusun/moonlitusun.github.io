@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "Function的进阶用法"
-date = "2019-01-21 13:58:29"
-tags = [
+---
+author: "Roc"
+title: "Function的进阶用法"
+date: "2019-01-21 13:58:29"
+tags: [
     "JavaScript",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 ## IIFE
 

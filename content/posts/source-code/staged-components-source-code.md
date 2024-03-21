@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "Staged Components Source Code"
-date = "2023-04-09T08:28:42+08:00"
-tags = [
+---
+author: "Roc"
+title: "Staged Components Source Code"
+date: "2023-04-09T08:28:42+08:00"
+tags: [
     "Source-Code",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 
 # 简述

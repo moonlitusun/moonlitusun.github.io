@@ -1,12 +1,14 @@
-+++
-author = "Roc"
-title = "浏览器缓存机制"
-date = "2021-05-14 12:07:00"
-description = "Lorem Ipsum Dolor Si Amet"
-tags = [
+---
+author: "Roc"
+title: "浏览器缓存机制"
+date: "2021-05-14 12:07:00"
+description: "Lorem Ipsum Dolor Si Amet"
+tags: [
     "BOM",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 浏览器缓存，既是网页静态资源服务性能优化的一大利器，也是无数web开发者在工作之初谈之色变的一大难题。
 

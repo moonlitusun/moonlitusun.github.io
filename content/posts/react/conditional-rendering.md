@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "Conditional Rendering"
-date = "2019-09-17 22:11:13"
-tags = [
+---
+author: "Roc"
+title: "Conditional Rendering"
+date: "2019-09-17 22:11:13"
+tags: [
     "React",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 
 ## If/Else

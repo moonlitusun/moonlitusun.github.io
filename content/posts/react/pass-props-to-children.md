@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "HOC"
-date = "2021-03-14 18:18:31"
-tags = [
+---
+author: "Roc"
+title: "HOC"
+date: "2021-03-14 18:18:31"
+tags: [
     "React",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 React中调用组件的时候可以在组件内写值，这时候会在组件中的`props.chilren`中显现，具体可参考[children in JSX](https://reactjs.org/docs/jsx-in-depth.html#children-in-jsx)。
 但是这时候会有一个问题，无法给`children`传props。如下：

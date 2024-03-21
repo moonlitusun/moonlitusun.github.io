@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "Async"
-date = "2019-09-11 15:50:16"
-tags = [
+---
+author: "Roc"
+title: "Async"
+date: "2019-09-11 15:50:16"
+tags: [
     "JavaScript",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 ES7加入的`async`函数，终于让 JavaScript 对于异步操作有了终极解决方案。No more callback hell。
 

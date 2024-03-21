@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "Promise"
-date = "2019-08-24 10:06:16"
-tags = [
+---
+author: "Roc"
+title: "Promise"
+date: "2019-08-24 10:06:16"
+tags: [
     "JavaScript",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 Promise是ES6新加的一个功能，用来支持异步编程，在之前的异步操作，我们需要使用callback来处理，但是这会引起回调地域([callbackhell](http://callbackhell.com/))，
 promise正是处理这个问题的。

@@ -1,0 +1,93 @@
+baseURL = "https://moonlitusun.github.io/"
+# title = "Hugo Themes"
+author = "Roc"
+copyright = "Copyright © 2017–2024, Steve Francia and the lee.so; all rights reserved."
+paginate = 3
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors = ["error-remote-getjson"]
+
+# ------------------------------
+theme = "gokarna"
+title = "Moonlit"
+staticDir = ['static']
+
+[params]
+  tags = true
+  color = 'linen'
+
+  twitter = 'rocsun96'
+  github = 'moonlitusun'
+
+  avatar = 'https://moonlit.vip/images/avatar.jpg'
+  name = 'Roc ☀️'
+  bio = '窮且益堅，不墜青雲之志'
+
+  # graphCommentId = "YOUR_GRAPH_COMMENT_ID"  # use graph comment (disqus alternative)
+
+  # giscus
+[params.giscus]
+  repo = 'moonlitusun/moonlitusun.github.io'                 # see https://giscus.app for more details
+  repoId = 'MDEwOlJlcG9zaXRvcnkxODA3MDgxMzk='
+  category = 'Announcements'
+  categoryId = 'DIC_kwDOCsVjK84CcsCi'
+  mapping = 'pathname'
+  theme = 'preferred_color_scheme'
+  lang = 'en'
+# ------------------------------
+
+# needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    lineNos = false
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true

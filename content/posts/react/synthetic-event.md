@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "SyntheticEvent"
-date = "2020-06-10 22:01:47"
-tags = [
+---
+author: "Roc"
+title: "SyntheticEvent"
+date: "2020-06-10 22:01:47"
+tags: [
     "React",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 # 前言
 

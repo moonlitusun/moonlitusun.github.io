@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "Page Rendering"
-date = "2024-01-30 13:58:29"
-tags = [
+---
+author: "Roc"
+title: "Page Rendering"
+date: "2024-01-30 13:58:29"
+tags: [
     "Web-Frameworks",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 # 什么是页面的渲染策略
 

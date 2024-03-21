@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "Create-Umi-source-code"
-date = "2023-12-20T19:47:49+08:00"
-tags = [
+---
+author: "Roc"
+title: "Create-Umi-source-code"
+date: "2023-12-20 19:47:49"
+tags: [
     "Source-Code",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 很简单的一个库，主要的操作就是初始化项目，文档在[getting-started](https://umijs.org/docs/guides/getting-started)。
 

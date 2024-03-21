@@ -1,11 +1,13 @@
-+++
-author = "Roc"
-title = "Redux Thunk Source Code"
-date = "2021-06-01 22:10:48"
-tags = [
+---
+author: "Roc"
+title: "Redux Thunk Source Code"
+date: "2021-06-01 22:10:48"
+tags: [
     "Source-Code",
 ]
-+++
+type: post
+showTableOfContents: true
+---
 
 Redux-thunk是一个redux的middleware，用来支持异步dispatch。
 
