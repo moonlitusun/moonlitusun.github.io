@@ -2,7 +2,6 @@
 author: "Roc"
 title: "浏览器缓存机制"
 date: "2021-05-14 12:07:00"
-description: "Lorem Ipsum Dolor Si Amet"
 tags: [
     "BOM",
 ]
