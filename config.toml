@@ -84,9 +84,9 @@ pygmentsStyle = "onedark"
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    pre = "<span data-feather='home'></span>"
-    url = "/"
+    name = "About"
+    pre = "<span data-feather='user'></span>"
+    url = "/about"
     weight = 1
 
   [[menu.main]]
@@ -97,13 +97,13 @@ pygmentsStyle = "onedark"
 
   [[menu.main]]
     identifier = "tags"
-    pre = "<span data-feather='tag'></span>"
+    pre = "<span data-feather='bookmark'></span>"
     name = "Tags"
     url = "/tags/"
     weight = 10
 
   [[menu.main]]
     name = "Posts"
-    pre = "<span data-feather='book'></span>"
+    pre = "<span data-feather='book-open'></span>"
     url = "/posts/"
     weight = 2
