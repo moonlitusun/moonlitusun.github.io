@@ -34,6 +34,7 @@ pygmentsStyle = "onedark"
   socialIcons = [
     {name = "twitter", url = "https://twitter.com/rocsun96"},
     {name = "github", url = "https://github.com/moonlitusun"},
+    {name = "email", url = "https://moonlitusun@gmail.com"},
   ]
 
   customHeadHTML = """
@@ -66,8 +67,11 @@ pygmentsStyle = "onedark"
   category = 'Announcements'
   categoryId = 'DIC_kwDOCsVjK84CcsCi'
   mapping = 'pathname'
-  theme = 'preferred_color_scheme'
   lang = 'en'
+  [params.giscus.theme]
+    light = 'light'
+    dark = 'dark_dimmed'
+    default = 'preferred_color_scheme'
 # ------------------------------
 
 # needed to  render raw HTML (e.g. <sub>, <sup>, <kbd>, <mark>)
