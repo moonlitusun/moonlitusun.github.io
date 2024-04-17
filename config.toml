@@ -36,6 +36,7 @@ pygmentsStyle = "onedark"
     {name = "github", url = "https://github.com/moonlitusun"},
     {name = "email", url = "https://moonlitusun@gmail.com"},
   ]
+  metaKeywords = ["moonlit", "roc", "roc sun"]
 
   customHeadHTML = """
     <!-- KaTeX -->
