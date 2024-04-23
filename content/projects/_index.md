@@ -3,7 +3,7 @@ title: " "
 type: page
 ---
 
-This is my some public projects by personally.
+Some public projects by personally.
 
 ## esboot
 
