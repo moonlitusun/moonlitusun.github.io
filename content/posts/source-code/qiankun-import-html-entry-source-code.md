@@ -36,27 +36,29 @@ git clone git@github.com:moonlitusun/import-html-entry.git
 
 ## scripts
 
-```sh
-# npm有几个命令是可以不用加run的，比如start、test 参考 https://docs.npmjs.com/cli/v9/commands 
-"lint": "npm test",
-# 打cjs包和esm包 shell的&&代表cmd1执行成功(状态码为0)才会执行下一个 类似的还有||, &,;,(),| cat ./package.json | wc -l
-"build": "npm run build:lib && npm run build:esm",
-# 直接执行babel命令
-"build:lib": "rm -fr ./lib && babel ./src --out-dir ./lib --ignore 'src/**/__tests__/**/*.js'",
-# 和上面命令不一样的是多了个BABEL_ENV=esm，参考babelrc
-"build:esm": "rm -fr ./esm && BABEL_ENV=esm babel ./src --out-dir ./esm --ignore 'src/**/__tests__/**/*.js'",
-# push之前执行下单元测试
-"prepush": "npm run lint",
-"prepublishOnly": "npm run build",
-# publish发布工具，快速更新版本号
-# 参考<https://github.com/sindresorhus/np>
-# --yolo                 Skips cleanup and testing
-# --no-publish            Skips publishing
-"release": "np --no-cleanup --yolo --no-publish --any-branch",
-"test": "jest --coverage",
-# npm view codecov
-# 参考<https://docs.npmjs.com/cli/v9/commands/npm-view>
-"codecov": "codecov"
+```json
+{
+  # npm有几个命令是可以不用加run的，比如start、test 参考 https://docs.npmjs.com/cli/v9/commands 
+  "lint": "npm test",
+  # 打cjs包和esm包 shell的&&代表cmd1执行成功(状态码为0)才会执行下一个 类似的还有||, &,;,(),| cat ./package.json | wc -l
+  "build": "npm run build:lib && npm run build:esm",
+  # 直接执行babel命令
+  "build:lib": "rm -fr ./lib && babel ./src --out-dir ./lib --ignore 'src/**/__tests__/**/*.js'",
+  # 和上面命令不一样的是多了个BABEL_ENV=esm，参考babelrc
+  "build:esm": "rm -fr ./esm && BABEL_ENV=esm babel ./src --out-dir ./esm --ignore 'src/**/__tests__/**/*.js'",
+  # push之前执行下单元测试
+  "prepush": "npm run lint",
+  "prepublishOnly": "npm run build",
+  # publish发布工具，快速更新版本号
+  # 参考<https://github.com/sindresorhus/np>
+  # --yolo                 Skips cleanup and testing
+  # --no-publish            Skips publishing
+  "release": "np --no-cleanup --yolo --no-publish --any-branch",
+  "test": "jest --coverage",
+  # npm view codecov
+  # 参考<https://docs.npmjs.com/cli/v9/commands/npm-view>
+  "codecov": "codecov"
+}
 ```
 
 ### 因为打esm包讲一下它的babel配置
@@ -265,17 +267,17 @@ remove html comment first
   - 赋值entry；
   - 如果是`ignore`的资源打上忽略标记。
   - 如果是`async`和`crossorign`的会特殊处理(async和defer，所以之前写script会放在html下面，但是现在也没有啥用就一个root div)，然后会把script push到`scripts`数组里，然后返回一个标记。
-- 如果是内敛script，会去获取里面的内容push到`scripts`数组里，然后返回一个标记。
+- 如果是内联script，会去获取里面的内容push到`scripts`数组里，然后返回一个标记。
 
 #### 处理完所有的资源返回
 
-- 先过滤一下空内敛`script`
+- 先过滤一下空内联`script`
 - 判断了一下是否有指定`entry`如果没有就默认指定最后一个，所以我们的入口文件一定要写在最后一个。
 - `postProcessTemplate`执行以下`post`钩子函数就返回。
 
 ### 调用getEmbedHTML
 
-- 参数是`template`和`style`标签，判断如果是内敛标签直接返回，如果不是就请求url返回text。
+- 参数是`template`和`style`标签，判断如果是内联标签直接返回，如果不是就请求url返回text。
 - 此时的`styleSheets`就是内容，然后把上一部做的标记替换为`<style>内容<style>`的形式。
 
 ### 获取到解析模版的结果
