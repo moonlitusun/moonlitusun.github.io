@@ -51,8 +51,8 @@ git clone git@github.com:moonlitusun/import-html-entry.git
   "prepublishOnly": "npm run build",
   # publish发布工具，快速更新版本号
   # 参考<https://github.com/sindresorhus/np>
-  # --yolo                 Skips cleanup and testing
-  # --no-publish            Skips publishing
+  # --yolo Skips cleanup and testing
+  # --no-publish Skips publishing
   "release": "np --no-cleanup --yolo --no-publish --any-branch",
   "test": "jest --coverage",
   # npm view codecov
