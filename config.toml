@@ -20,7 +20,7 @@ pygmentsStyle = "onedark"
   tags = true
   color = 'linen'
 
-  twitter = 'rocsun96'
+  twitter = 'roc_orange'
   github = 'moonlitusun'
 
   footer = "Roc"
@@ -32,7 +32,7 @@ pygmentsStyle = "onedark"
   name = 'Roc ☀️'
 
   socialIcons = [
-    {name = "twitter", url = "https://twitter.com/rocsun96"},
+    {name = "twitter", url = "https://twitter.com/roc_orange"},
     {name = "github", url = "https://github.com/moonlitusun"},
     {name = "email", url = "https://moonlitusun@gmail.com"},
   ]
