@@ -17,7 +17,7 @@ showTableOfContents: true
 
 最终实现的效果为：
 
-<video src="https://moonlit.vip/images/flutter-dsbridge-example.mp4" controls></video>
+<video src="/flutter-dsbridge-example.mp4" controls></video>
 
 ## 使用到的工具
 
