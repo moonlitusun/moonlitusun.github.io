@@ -5,7 +5,7 @@ type: page
 
 Some public projects by personally.
 
-## esboot
+## ⭐️ ESBoot
 
 `2020 ~ now`
 
@@ -13,7 +13,27 @@ Some public projects by personally.
 
 Front-end infrastructure tool, base on react / webpack。
 
-## wangEditor-plugin-docx
+## ⭐️ Vite-Plugin-MPA
+
+`2025 ~ now`
+
+[Github](https://github.com/moonlitusun/vite-plugin-mpa)
+
+This plugin provides true MPA functionality for Vite, eliminating various limitations of Vite MP.
+
+**No matter where your entry files/template files are located, you can access pages through the root route, making it perfect for embedded page development.**
+
+```plaintext
+http://localhost:5173/index.html
+http://localhost:5173/about.html
+...
+```
+
+🙅🏻‍♀️: ~~No need to search everywhere for your MPA page addresses.~~
+
+Try the [demo](https://codesandbox.io/p/devbox/2lrppj).
+
+## ⭐️ WangEditor-Plugin-Docx
 
 `2023 ~ now`
 
@@ -21,7 +41,7 @@ Front-end infrastructure tool, base on react / webpack。
 
 [wangEditor 5](https://www.wangeditor.com/) plugin of word, Supports to preserve the styles when you paste content from Microsoft Word / WPS。
 
-## o-orange
+## ⭐️ O-Orange
 
 `2019 ~ now`
 
@@ -29,7 +49,7 @@ Front-end infrastructure tool, base on react / webpack。
 
 Implementation of some useful functions for Financial Industry。
 
-## markdown-reveal
+## ⭐️ Markdown-Reveal
 
 `2019~2021` `Archived`
 
