@@ -95,6 +95,12 @@ pygmentsStyle = "onedark"
     weight = 1
 
   [[menu.main]]
+    name = "Mine"
+    pre = "<span data-feather='heart'></span>"
+    url = "/mine/"
+    weight = 1.5
+
+  [[menu.main]]
     name = "Projects"
     pre = "<span data-feather='code'></span>"
     url = "/projects/"
