@@ -16,7 +16,7 @@ showTableOfContents: true
 目前主力编辑器依然是 [Cursor](https://www.cursor.com/)，期间也试用过其他工具：
 
 - [Trae](https://www.trae.ai/) 使用体验上和 Cursor 还有一些差距，不过作为国内的平替还是可以尝试的。
-- [Antigravity](https://antigravity.google/) 很想体验这个工具，但由于 Google 账号的地区问题一直无法使用，换区申请也没有得到回复。
+- [Antigravity](https://antigravity.google/) 如果Google账号地区限制了可以试试[Google Antigravity 卡在 Setting Up Your Account 无法登录的解决方案](https://loongphy.com/blog/google-antigravity-stuck-setting-up-your-account)，切到日本就可以，亲试可用。
 
 作为 Cursor 的早期付费用户，虽然整体体验不错，但也有一些让人头疼的问题：
 
