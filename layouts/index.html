@@ -22,12 +22,6 @@
         <li class="social-icon">
             <a href="{{ .url }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} aria-label="Learn more on {{ .name }}">
                 <img class="svg-inject" src="/svg/icons/{{ .name }}.svg" />
-                {{ if eq .name "wechat" }}
-                <div class="wechat-qr">
-                    <img src="/wechat-official-account.jpg" alt="WeChat Official Account">
-                    <p class="wechat-text">这是我维护的一个公众号，专注于分享AI和编程，有兴趣可以关注</p>
-                </div>
-                {{ end }}
             </a>
         </li>
         {{ end }}

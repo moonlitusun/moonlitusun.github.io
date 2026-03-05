@@ -1,0 +1,20 @@
+{{ $type := .Get "type" }}
+{{ $dataFile := .Get "data" }}
+{{ $gridClass := cond (eq $type "books") "books-grid" "items-grid" }}
+
+{{ $fullPath := printf "static%s" $dataFile }}
+{{ $dataString := readFile $fullPath }}
+{{ $data := unmarshal $dataString }}
+
+{{ $years := slice }}
+{{ range $data }}
+  {{ $year := substr .date 0 4 }}
+  {{ if not (in $years $year) }}
+    {{ $years = $years | append $year }}
+  {{ end }}
+{{ end }}
+
+{{ range sort $years "value" "desc" }}
+  <h2 id="{{ . }}年">{{ . }}年</h2>
+  <div id="{{ $type }}-{{ . }}" class="{{ $gridClass }}"></div>
+{{ end }}

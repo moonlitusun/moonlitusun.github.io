@@ -1,0 +1,95 @@
+{{/* media-loader shortcode */}}
+{{ $type := .Get "type" }}
+{{ $data := .Get "data" }}
+<script>
+(async function() {
+  var defined_type = "{{ $type }}";
+  var defined_data = "{{ $data }}";
+  try {
+    const response = await fetch(defined_data);
+    const items = await response.json();
+    const itemsByYear = {};
+    items.forEach(item => {
+      const year = item.date.substring(0, 4);
+      if (!itemsByYear[year]) itemsByYear[year] = [];
+      itemsByYear[year].push(item);
+    });
+    const years = Object.keys(itemsByYear).sort((a, b) => b.localeCompare(a));
+    const colors = [
+      ['#ff9a9e', '#fecfef'],
+      ['#a18cd1', '#fbc2eb'],
+      ['#84fab0', '#8fd3f4'],
+      ['#e0c3fc', '#8ec5fc'],
+      ['#f093fb', '#f5576c'],
+      ['#4facfe', '#00f2fe'],
+      ['#43e97b', '#38f9d7'],
+      ['#fa709a', '#fee140'],
+      ['#30cfd0', '#330867'],
+      ['#a8edea', '#fed6e3']
+    ];
+    years.forEach(year => {
+      const container = document.getElementById(`${defined_type}-${year}`);
+      if (!container) return;
+      const count = itemsByYear[year].length;
+      const heading = container.previousElementSibling;
+      if (heading && heading.tagName === 'H2') {
+        const suffix = defined_type === 'books' ? '本' : '部';
+        heading.innerHTML = `${year}年 <span class="year-count">(${count}${suffix})</span>`;
+      }
+      let html = '';
+      itemsByYear[year].forEach(item => {
+        const title = item.title;
+        let hash = 0;
+        for (let i = 0; i < title.length; i++) {
+          hash = title.charCodeAt(i) + ((hash << 5) - hash);
+        }
+        const colorPair = colors[Math.abs(hash) % colors.length];
+        const coverStyle = `background: linear-gradient(135deg, ${colorPair[0]} 0%, ${colorPair[1]} 100%);`;
+        if (defined_type === 'books') {
+          const rating = item.rating ? `<div class="book-rating">${item.rating}</div>` : '<div></div>';
+          const author = item.author || '--';
+          const douban = item.douban ? `href="${item.douban}" target="_blank"` : '';
+          const titleLink = douban ? `<a ${douban}>${title}</a>` : title;
+          html += `
+            <div class="book-card" ${douban ? `onclick="window.open('${item.douban}', '_blank')"` : ''}>
+              <div class="book-cover-placeholder" style="${coverStyle}">${title}</div>
+              <div class="book-title">${titleLink}</div>
+              <div class="book-meta">
+                ${rating}
+                <div class="book-author">${author}</div>
+              </div>
+            </div>`;
+        } else {
+          const cinemaBadge = item.cinema ? '<div class="cinema-badge">🍿 影院</div>' : '<div></div>';
+          const dateDisplay = item.date.split(' ')[0];
+          html += `
+            <div class="item-card">
+              <div class="item-cover-placeholder" style="${coverStyle}">${title}</div>
+              <div class="item-title">${title}</div>
+              <div class="item-meta">
+                ${cinemaBadge}
+                <div class="item-date">${dateDisplay}</div>
+              </div>
+            </div>`;
+        }
+      });
+      container.innerHTML = html;
+    });
+    // Build TOC from rendered h2 headings
+    const tocNav = document.getElementById('toc');
+    if (tocNav) {
+      const headings = document.querySelectorAll('.post-content h2[id]');
+      if (headings.length > 0) {
+        let tocHtml = '<ul>';
+        headings.forEach(h => {
+          tocHtml += `<li><a href="#${h.id}">${h.textContent}</a></li>`;
+        });
+        tocHtml += '</ul>';
+        tocNav.innerHTML = tocHtml;
+      }
+    }
+  } catch (e) {
+    console.error('Failed to load data:', e);
+  }
+})();
+</script>
