@@ -35,6 +35,7 @@ pygmentsStyle = "onedark"
     {name = "twitter", url = "https://x.com/moonlitusun"},
     {name = "github", url = "https://github.com/moonlitusun"},
     {name = "email", url = "https://moonlitusun@gmail.com"},
+    {name = "wechat", url = "#"},
   ]
   metaKeywords = ["moonlit", "roc", "roc sun"]
 
@@ -57,6 +58,52 @@ pygmentsStyle = "onedark"
         });
       });
     </script>
+    <style>
+      .social-icon {
+        position: relative;
+      }
+      .wechat-qr {
+        display: none;
+        position: absolute;
+        bottom: 150%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        z-index: 1000;
+        width: 180px;
+        text-align: center;
+      }
+      .wechat-qr::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -8px;
+        border-width: 8px;
+        border-style: solid;
+        border-color: white transparent transparent transparent;
+      }
+      .wechat-qr img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+      }
+      .wechat-text {
+        font-size: 13px;
+        color: #333;
+        margin-top: 8px;
+        margin-bottom: 0;
+        line-height: 1.4;
+      }
+      .social-icon:hover .wechat-qr {
+        display: block;
+      }
+    </style>
   """
 
   # graphCommentId = "YOUR_GRAPH_COMMENT_ID"  # use graph comment (disqus alternative)
