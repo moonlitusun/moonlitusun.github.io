@@ -11,7 +11,7 @@ Love Coding, Love Life
 Always
 </div>
 
-Primary languages: Web Frontend/Node, secondary languages: Python/Bash.
+AI/FE/Python
 
 Proficient in React/Next.
 
@@ -33,7 +33,7 @@ Enjoys reading, loves to think, and good at sharing.
 <br />
 <br />
 
-第一语言Web前端/Node，第二语言Python/Bash。
+AI/FE/Python
 
 擅长React/Next。
 
